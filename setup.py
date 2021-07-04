@@ -1,8 +1,7 @@
 from setuptools import setup, find_packages
 setup(name='vposer',
       version='0.1.0',
-      packages=find_packages('vposer'),
-      package_dir={'': 'vposer'},
+      packages=['vposer'],
       include_package_data=True,
       author='zzilch',
       author_email='zz@zilch.zone',
