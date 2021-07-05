@@ -47,6 +47,9 @@ class VPoserBodyModel(nn.Module):
             
             self.register_parameter('body_pose_z', nn.Parameter(body_pose_z, requires_grad=True))
         
+        for name,param in self.bm.named_parameters():
+            setattr(self,name,param)
+        
     def forward(self, body_pose_z=None, **kwargs):
         ''' Parameters
             ----------
