@@ -6,7 +6,7 @@ import pyvista as pv
 
 bm = smplx.build_layer('./models','smplx')
 vp = vposer.create('./models/vposer/V02_05_epoch=13_val_loss=0.03.ckpt',2)
-vpbm = vposer.VPoserBodyLayer(bm,vp)
+vpbm = vposer.VPoserBodyModel(bm,vp)
 
 with torch.no_grad():
     bodies = vpbm.sample_bodies(50)

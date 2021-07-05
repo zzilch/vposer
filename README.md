@@ -62,8 +62,8 @@ The you wil get the clean check points of VPoser like this
 
 ## Usage
 
-1. Use VPoser: The VPoser models `vposer.VPoserV1` and `vposer.VPoserV2` are borrowed from the offical released code.  Using `vp = vposer.create(path_to_checkpoint,version)` to load a VPoser model.  
-2. Use body model with VPoser: Using `vposer.VPoserBodyModel(bm,vp)` and  `vposer.VPoserBodyLayer(bm,vp)` to create body model with VPoser, which `bm` is a body model from official SMPLX.
+1. Use VPoser: The VPoser models `vposer.VPoserV1` and `vposer.VPoserV2` are borrowed from the offical SMPLX. Use `vp = vposer.create(path_to_checkpoint,version)` to create and load a VPoser model.  
+2. Use body model with VPoser: Use `vposer.VPoserBodyModel(bm,vp)` to create body model with VPoser, where `bm` is a body model or layer from SMPLX.
 
 Check examples for more details
 
